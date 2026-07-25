@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BrownMediaGroup — Technology & Media</title>
+  <meta name="description" content="BrownMediaGroup LLC — PC repair, YouTube content, and AI-powered tools.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Montserrat:wght@700;800&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --black: #0a0a0a;
+      --dark-gray: #1a1a1a;
+      --white: #ffffff;
+      --lime: #39FF14;
+      --orange: #FF6B00;
+      --red: #ff3333;
+    }
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: 'Inter', sans-serif;
+      background: var(--black);
+      color: var(--white);
+      line-height: 1.6;
+    }
+    .container {
+      max-width: 960px;
+      margin: 0 auto;
+      padding: 80px 20px;
+    }
+    header {
+      text-align: center;
+      margin-bottom: 60px;
+    }
+    h1 {
+      font-family: 'Montserrat', sans-serif;
+      font-weight: 800;
+      font-size: clamp(2.2rem, 5vw, 3.4rem);
+      color: var(--white);
+      letter-spacing: -0.02em;
+    }
+    h1 span {
+      color: var(--lime);
+    }
+    .tagline {
+      font-size: 1.15rem;
+      color: #888;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      margin-top: 12px;
+    }
+    .badge {
+      display: inline-block;
+      margin-top: 20px;
+      padding: 6px 16px;
+      background: rgba(57, 255, 20, 0.08);
+      border: 1px solid rgba(57, 255, 20, 0.35);
+      border-radius: 999px;
+      font-size: 0.8rem;
+      color: var(--lime);
+      font-weight: 500;
+    }
+    .pillars {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 18px;
+      margin: 50px 0;
+    }
+    .pillar {
+      background: var(--dark-gray);
+      border: 1px solid rgba(255, 255, 255, 0.06);
+      border-radius: 14px;
+      padding: 26px;
+      transition: border-color 0.25s, transform 0.25s;
+    }
+    .pillar:hover {
+      border-color: rgba(57, 255, 20, 0.4);
+      transform: translateY(-2px);
+    }
+    .pillar-icon {
+      font-size: 1.8rem;
+      margin-bottom: 10px;
+    }
+    .pillar h3 {
+      font-family: 'Montserrat', sans-serif;
+      font-weight: 700;
+      color: var(--white);
+      margin-bottom: 8px;
+      font-size: 1.1rem;
+    }
+    .pillar p {
+      color: #9a9a9a;
+      font-size: 0.95rem;
+    }
+    .repair-cta {
+      text-align: center;
+      margin-top: 50px;
+      padding: 36px;
+      background: linear-gradient(135deg, rgba(255, 107, 0, 0.08), rgba(57, 255, 20, 0.04));
+      border: 1px solid rgba(255, 107, 0, 0.35);
+      border-radius: 16px;
+    }
+    .repair-cta h2 {
+      font-family: 'Montserrat', sans-serif;
+      font-weight: 700;
+      color: var(--white);
+      margin-bottom: 10px;
+    }
+    .btn {
+      display: inline-block;
+      margin-top: 16px;
+      padding: 14px 30px;
+      background: var(--orange);
+      color: var(--black);
+      text-decoration: none;
+      border-radius: 8px;
+      font-weight: 600;
+      font-size: 1rem;
+      transition: transform 0.2s, background 0.2s;
+    }
+    .btn:hover {
+      transform: translateY(-2px);
+      background: #ff8533;
+    }
+    footer {
+      text-align: center;
+      margin-top: 60px;
+      padding-top: 24px;
+      border-top: 1px solid rgba(255, 255, 255, 0.08);
+      color: #555;
+      font-size: 0.8rem;
+    }
+    @media (max-width: 600px) {
+      h1 { font-size: 2rem; }
+      .pillars { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>Brown<span>Media</span>Group</h1>
+      <p class="tagline">Home Lab · Media · Builds</p>
+      <span class="badge">BrownMediaGroup LLC</span>
+    </header>
+
+    <div class="pillars">
+      <div class="pillar">
+        <div class="pillar-icon">🖥️</div>
+        <h3>Server & Infrastructure</h3>
+        <p>Homelab operations, Dell T3600 services, Docker/Portainer stack management, and local-first tooling.</p>
+      </div>
+      <div class="pillar">
+        <div class="pillar-icon">📡</div>
+        <h3>Network & Media</h3>
+        <p>Network hardening, media pipelines, obsidian-backed ops, and asset management for BrownMediaGroup.</p>
+      </div>
+      <div class="pillar">
+        <div class="pillar-icon">🎬</div>
+        <h3>YouTube & Content</h3>
+        <p>Tech build videos, repair content, and unboxings — the funnel that drives our repair business.</p>
+      </div>
+    </div>
+
+    <div class="repair-cta">
+      <h2>Need a Repair?</h2>
+      <p>Local pickup, same-day diagnostics, and transparent pricing available.</p>
+      <a href="https://ppcrepair.com" class="btn">Visit ppcrepair.com →</a>
+    </div>
+
+    <footer>
+      <p>&copy; 2026 BrownMediaGroup LLC. Michigan, USA.</p>
+    </footer>
+  </div>
+</body>
+</html>
